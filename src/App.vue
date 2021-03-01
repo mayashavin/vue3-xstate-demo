@@ -1,16 +1,24 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <Toggle />
+  <!-- <div>Toogle mode: {{toggleMode.value}}</div> -->
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Toggle from './components/Toggle.vue'
+// import { useToggleMachine } from './services/toggleService'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    Toggle
+  },
+  // setup() {
+  //   const { state } = useToggleMachine()
+
+  //   return {
+  //     toggleMode: state
+  //   }
+  // }
 }
 </script>
 
